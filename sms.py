@@ -2116,17 +2116,6 @@ class SendSms():
         except:
             pass
 
-
-    def abantether(phone):
-        rhead = {"user-agent": generate_user_agent()}
-        n4 = {"phoneNumber": "0"+phone.split("+90")[1]}
-        try:
-            post(url="https://abantether.com/users/register/phone/send/", data=n4, headers=rhead)
-            return True
-        except:
-            pass
-
-
     def bit24(phone):
         rhead = {"user-agent": generate_user_agent()}
         n4 = {"mobile": "0"+phone.split("+90")[1]}
