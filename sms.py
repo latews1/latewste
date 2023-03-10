@@ -3062,7 +3062,8 @@ class SendSms():
             return True
         except:
             pass
-            
+
+
     def amoomilad(phone):
         n4 = {"Token":"5c486f96df46520d1e4d4a990515b1de02392c9b903a7734ec2798ec55be6e5c","DeviceId":1,"PhoneNumber":"0"+phone.split('+90')[1],"Helper":77942}
         rhead = {'user-agent': generate_user_agent()}
