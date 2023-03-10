@@ -4,6 +4,7 @@ from string import ascii_lowercase
 from bs4 import BeautifulSoup
 from colorama import Fore, Style
 from time import sleep
+from user_agent import generate_user_agent
 
 class SendSms():
     adet = 0
