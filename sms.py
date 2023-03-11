@@ -2442,6 +2442,6 @@ class SendSms():
     def twitch(self):
         try:
             requests.post('https://passport.twitch.tv/register?trusted_request=true',json={'birthday': {'day': 11, 'month': 11, 'year': 1999},'client_id': 'kd1unb4b3q4t58fwlpcbzcbnm76a8fp', 'include_verification_code': True,'password': password, 'phone_number': {self.phone},'username': username})
-            print('Twitch: отправлено')
+            print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> api.twtitch.com")
         except:
-            print('Twitch: не отправлено')
+            print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> api.twitch.app")
