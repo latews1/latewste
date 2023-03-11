@@ -4889,6 +4889,8 @@ class SendSms():
         except:
             pass
     
+  
+    
     def snapfood(self):
         sfoodU = 'https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.0&UDID=39c62f64-3d2d-4954-9033-816098559ae4&locale=fa'
         sfoodH = {'accept': 'application/json, text/plain, */*',
@@ -4908,15 +4910,3 @@ class SendSms():
                 return True # snapp food
         except:
             pass   
-
-    def sheypoor(self):
-        sheyporH = {"Host": "www.sheypoor.com","User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0","Accept": "*/*","Accept-Language": "en-US,en;q=0.5","Accept-Encoding": "gzip, deflate, br","Content-Type": "application/x-www-form-urlencoded; charset=UTF-8","X-Requested-With": "XMLHttpRequest","Content-Length": "62","Origin": "https://www.sheypoor.com","Connection": "keep-alive","Referer": "https://www.sheypoor.com/session","Cookie": "plog=False; _lba=false; AMP_TOKEN=%24NOT_FOUND; ts=46f5e500c49277a72f267de92dd51238; track_id=22f97cea33f34e368e4b3edd23afd391; analytics_campaign={%22source%22:%22google%22%2C%22medium%22:%22organic%22}; analytics_session_token=3f475c6e-f55b-0d29-de67-6cdc46bc6592; analytics_token=3cce634d-040a-baf3-fdd6-552578d672df; yektanet_session_last_activity=8/13/2020; _yngt=0bc37b56-6478-488b-c801-521f101259fd; _lbsa=false; _ga=GA1.2.1464689488.1597346921; _gid=GA1.2.1551213293.1597346921; _gat=1","TE": "Trailers"}
-        sheyporD = {"username" : {self.phone}("+90")[1]}
-        try:
-            sheyporR = requests.post(timeout=5, url='https://www.sheypoor.com/auth', headers=sheyporH, data=sheyporD).json()
-            if sheyporR['success'] == True:
-                print(f'{g}(Sheypoor) {w}Code Was Sent')
-                return True # Sheypoor
-        except:
-            pass
-        
