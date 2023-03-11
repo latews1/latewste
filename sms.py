@@ -4889,24 +4889,6 @@ class SendSms():
         except:
             pass
     
-    def divar(self):
-        divarH = {'accept': 'application/json, text/plain, */*',
-    'accept-encoding': 'gzip, deflate, br',
-    'accept-language': 'en-US,en;q=0.9',
-    'content-type': 'application/x-www-form-urlencoded',
-    'origin': 'https://divar.ir',
-    'referer': 'https://divar.ir/',
-    'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36',
-    'x-standard-divar-error': 'true'}
-        divarD = {"phone":{self.phone}("+90")[1]}
-        try:
-            divarR = requests.post(timeout=5, url="https://api.divar.ir/v5/auth/authenticate", headers=divarH, json=divarD).json()
-            if divarR["authenticate_response"] == "AUTHENTICATION_VERIFICATION_CODE_SENT":
-                print(f'{g}(Divar) {w}Code Was Sent')
-                return True #divar api
-        except:
-            pass
-    
     def snapfood(self):
         sfoodU = 'https://snappfood.ir/mobile/v2/user/loginMobileWithNoPass?lat=35.774&long=51.418&optionalClient=WEBSITE&client=WEBSITE&deviceType=WEBSITE&appVersion=8.1.0&UDID=39c62f64-3d2d-4954-9033-816098559ae4&locale=fa'
         sfoodH = {'accept': 'application/json, text/plain, */*',
